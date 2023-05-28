@@ -1,13 +1,11 @@
-function kiemTraChanLe(so) { 
+function kiemTraChanLe(number) {
+  if (number % 2 === 0) {
+    return "Chẵn";
+  } else {
+    return "Lẻ";
+  }
+}
 
-    if(so % 2 ==0){
-        return "chẵn";
-    }else{
-        return "lẻ";
-    }
-
-
-
-} 
-var so = prompt("hay nhap so:");
-console.log(kiemTraChanLe(so));
+console.log(kiemTraChanLe(10)); // Output: "Chẵn"
+console.log(kiemTraChanLe(7)); // Output: "Lẻ"
+console.log(kiemTraChanLe(0)); // Output: "Chẵn"
