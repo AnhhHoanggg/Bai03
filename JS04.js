@@ -1,19 +1,21 @@
-<!DOCTYPE html> 
-<html> 
-<body> 
-  <p id="doanVan">Đây là một đoạn văn.</p> 
-  <button onclick="chuyenDoiHienThi()">Chuyển đổi hiển thị</button> 
- 
-  <script>     
-    function chuyenDoiHienThi() {       
-        var doanVan = document.getElementById("doanVan"); 
-        if (doanVan.style.display === "none") {
-            doanVan.style.display = "block";
-        } else {
-            doanVan.style.display = "none";
-        }
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chuyển đổi sự hiển thị</title>
+</head>
+<body>
+  <button onclick="chuyenDoiHienThi()">Chuyển đổi</button>
+  <p id="myParagraph" style="display: none;">Đây là một đoạn văn.</p>
 
-    } 
-  </script> 
-</body> 
+  <script>
+    function chuyenDoiHienThi() {
+      var paragraph = document.getElementById("myParagraph");
+      if (paragraph.style.display === "none") {
+        paragraph.style.display = "block";
+      } else {
+        paragraph.style.display = "none";
+      }
+    }
+  </script>
+</body>
 </html>
